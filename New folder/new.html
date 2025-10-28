@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rural Career Guide — Accessible local guidance & real jobs</title>
+  <meta name="description" content="Accessible, local-language career guidance with free videos, role models, and real job connections for rural students." />
+  <style>
+    /* Minimal, mobile-first styles */
+    :root{--primary:#087f5b;--accent:#06b6d4;--muted:#6b7280;--bg:#fbfdff}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans',sans-serif;color:#0f172a;background:var(--bg);line-height:1.45}
+    a{color:inherit}
+
+    /* Container */
+    .container{max-width:980px;margin:0 auto;padding:20px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    .brand h1{font-size:1.05rem}
+    nav{display:flex;gap:12px;align-items:center}
+    .nav-link{font-size:.9rem;color:var(--muted)}
+    .primary-cta{background:var(--primary);color:#fff;padding:8px 12px;border-radius:8px;font-weight:600}
+
+    /* Hero */
+    .hero{background:#fff;margin-top:12px;padding:22px;border-radius:12px;display:grid;grid-template-columns:1fr;gap:18px;align-items:center}
+    .hero-grid{display:flex;gap:18px;align-items:center}
+    .hero h2{font-size:1.35rem;color:#07203a}
+    .hero p{color:var(--muted)}
+    .actions{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{padding:10px 14px;border-radius:8px;border:none;cursor:pointer;font-weight:600}
+    .btn-cta{background:var(--primary);color:#fff}
+    .btn-outline{background:#fff;border:1px solid #e6eef0;color:#0f172a}
+
+    /* Stats */
+    .stats{display:flex;gap:12px;margin-top:8px}
+    .stat{background:#f8fafb;padding:12px;border-radius:8px;flex:1;text-align:center}
+    .stat strong{display:block;color:var(--primary);font-size:1.05rem}
+
+    /* Features */
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}
+    .card{background:#fff;padding:14px;border-radius:10px}
+    .card h3{color:var(--primary);margin-bottom:6px}
+    .muted{color:var(--muted);font-size:.95rem}
+
+    /* Demo area / visual */
+    .visual{display:flex;align-items:center;justify-content:center;padding:20px}
+    svg{max-width:220px;height:auto}
+
+    /* Contact & footer */
+    .contact{margin-top:18px;background:#fff;padding:16px;border-radius:10px}
+    .contact .row{display:flex;gap:12px;flex-wrap:wrap}
+    .contact a{display:inline-block;padding:8px 10px;border-radius:8px;background:#eefaf6;color:var(--primary);font-weight:600}
+    footer{margin:18px 0;text-align:center;color:var(--muted);font-size:.9rem}
+
+    /* Responsive */
+    @media(min-width:700px){
+      .hero{padding:28px}
+      .hero-grid{display:grid;grid-template-columns:1fr 320px;align-items:center}
+      .features{grid-template-columns:repeat(3,1fr)}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">MyProduct</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+      <a href="#hero" class="cta-btn">Get Started</a>
+    </nav>
+  </header>
+
+    <section class="hero" id="hero">
+      <div class="hero-grid">
+        <div>
+          <h2>Accessible career guidance for rural students — in your language.</h2>
+          <p>We help Class 9–12 students and undergrads explore 10+ career paths with short videos, role-model stories, step-by-step learning paths, and low-data mobile content. Real local jobs and apprenticeship links included.</p>
+
+          <div class="actions">
+            <button class="btn btn-cta" onclick="location.href='#contact'">Get Free Guidance</button>
+            <button class="btn btn-outline" onclick="scrollToSection('features')">Explore Careers</button>
+            <a class="btn" href="mailto:hello@ruralcareerguide.org?subject=Guidance%20Request">Email Us</a>
+          </div>
+
+          <div class="stats" aria-hidden>
+            <div class="stat"><strong>68%</strong><span class="muted">depend on family advice</span></div>
+            <div class="stat"><strong>30%</strong><span class="muted">higher mismatch rate</span></div>
+            <div class="stat"><strong>₹50,000+ Cr</strong><span class="muted">annual productivity loss</span></div>
+          </div>
+        </div>
+
+        <div class="visual" aria-hidden>
+          <!-- Inline SVG: simple mobile + play icon to suggest video guidance -->
+          <svg viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mobile video illustration">
+            <rect x="6" y="6" width="108" height="128" rx="12" fill="#fff" stroke="#e6eef0" stroke-width="2"/>
+            <rect x="20" y="18" width="80" height="56" rx="6" fill="#06b6d4"/>
+            <polygon points="60,34 78,46 60,58" fill="#fff"/>
+            <rect x="24" y="84" width="72" height="8" rx="4" fill="#f1f5f9"/>
+            <circle cx="60" cy="110" r="10" fill="#087f5b"/>
+            <text x="60" y="114" font-size="9" fill="#fff" text-anchor="middle" font-family="sans-serif">Join</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features" aria-labelledby="features-title">
+      <div class="card">
+        <h3>10+ career options</h3>
+        <p class="muted">Short, local-language videos explaining each path, entry requirements, and nearby opportunities.</p>
+      </div>
+      <div class="card">
+        <h3>Step-by-step paths</h3>
+        <p class="muted">Clear guidance on skills, exams, and low-cost training options to reach each career.</p>
+      </div>
+      <div class="card">
+        <h3>Low-data & offline</h3>
+        <p class="muted">Compressed videos, transcripts, and SMS-based tips so students with limited internet can learn.</p>
+      </div>
+      <div class="card">
+        <h3>Local role models</h3>
+        <p class="muted">Stories from nearby towns showing how people reached jobs similar to those students can access.</p>
+      </div>
+      <div class="card">
+        <h3>Real job links</h3>
+        <p class="muted">Listings and apprenticeship connections that convert learning into real local opportunities.</p>
+      </div>
+      <div class="card">
+        <h3>Free core content</h3>
+        <p class="muted">Core videos and guidance are free; optional mentoring is low-cost and targeted.</p>
+      </div>
+    </section>
+
+    <section id="how" class="card" style="margin-top:16px">
+      <h3 id="features-title">How it works</h3>
+      <ol style="margin-top:8px;padding-left:18px;color:var(--muted)">
+        <li>Choose your language and education level.</li>
+        <li>Watch 3–5 minute career videos and compare options.</li>
+        <li>Follow the suggested learning path with low-cost steps.</li>
+        <li>Apply to nearby apprenticeships and jobs listed on the platform.</li>
+      </ol>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Contact & next step</h3>
+      <div style="margin-top:10px;color:var(--muted)">Get a free 15-minute guidance call or request a school session.</div>
+      <div class="row" style="margin-top:12px">
+        <a href="mailto:hello@ruralcareerguide.org?subject=Request%20Guidance">Email: hello@ruralcareerguide.org</a>
+        <a href="tel:+919000000000">Call: +91 90000 00000</a>
+        <a href="https://wa.me/919000000000" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+
+      <form style="margin-top:12px;display:flex;flex-direction:column;gap:8px" onsubmit="handleForm(event)">
+        <input name="name" placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid #e6eef0" />
+        <input name="phone" placeholder="Phone or WhatsApp" required style="padding:10px;border-radius:8px;border:1px solid #e6eef0" />
+        <select name="language" style="padding:10px;border-radius:8px;border:1px solid #e6eef0">
+          <option>Hindi</option>
+          <option>Marathi</option>
+          <option>Bengali</option>
+          <option>Kannada</option>
+          <option>Other</option>
+        </select>
+        <textarea name="note" rows="3" placeholder="Tell us what you need (school/session/demo)" style="padding:10px;border-radius:8px;border:1px solid #e6eef0"></textarea>
+        <div style="display:flex;gap:8px">
+          <button class="btn btn-cta" type="submit">Request Guidance</button>
+          <button type="button" class="btn btn-outline" onclick="window.open('https://example.com/demo','_blank')">View Demo</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div>© 2025 Rural Career Guide — Local-language career guidance · Mobile-first · Free core content</div>
+      <div style="margin-top:6px;color:var(--muted);font-size:.85rem">Follow: <a href="#">X</a> • <a href="#">Facebook</a> • <a href="#">YouTube</a></div>
+    </footer>
+  </div>
+
+  <script>
+    function scrollToSection(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth'});}
+
+    function handleForm(e){
+      e.preventDefault();
+      const f=new FormData(e.target);
+      // Fallback: open mail client with content so the page remains static and self-contained.
+      const subject = encodeURIComponent('Guidance request from '+(f.get('name')||'') );
+      const body = encodeURIComponent('Name: '+(f.get('name')||'')+'\nPhone: '+(f.get('phone')||'')+'\nLanguage: '+(f.get('language')||'')+'\nNote: '+(f.get('note')||''));
+      window.location.href = `mailto:hello@ruralcareerguide.org?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
